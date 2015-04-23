@@ -1,0 +1,4 @@
+#плагины для Гранта. Что бы установить - npm install
+/node_modules
+#пакеты Bower. Что бы установить bower install
+/bower_components
