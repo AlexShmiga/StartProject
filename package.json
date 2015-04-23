@@ -1,6 +1,6 @@
 {
-  "author": "Igor Bogdosarov",
-  "name": "template",
+  "author": "storozhukua@gmail.com",
+  "name": "StartProject",
   "version": "0.9.0",
   "devDependencies": {
     "grunt": "*",
