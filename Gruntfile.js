@@ -55,7 +55,46 @@ module.exports = function(grunt) {
                 }
             }
         },
-        /*start - grunt imagemin*/
+        /* start - grunt jsbeautifier */
+        jsbeautifier: {
+            files: ["assets/css/*.less", "assets/js/*.js", "html/*.html"],
+            options: {
+                html: {
+              braceStyle: "collapse",
+              indentChar: " ",
+              indentScripts: "keep",
+              indentSize: 2,
+              maxPreserveNewlines: 10,
+              preserveNewlines: true,
+              unformatted: ["a", "sub", "sup", "b", "i", "u"],
+              wrapLineLength: 0
+          },
+          css: {
+                    indentSize: 2,
+                    fileTypes: [".less"]
+                },
+          js: {
+              braceStyle: "collapse",
+              breakChainedMethods: false,
+              e4x: false,
+              evalCode: false,
+              indentChar: " ",
+              indentLevel: 0,
+              indentSize: 4,
+              indentWithTabs: false,
+              jslintHappy: false,
+              keepArrayIndentation: false,
+              keepFunctionIndentation: false,
+              maxPreserveNewlines: 10,
+              preserveNewlines: true,
+              spaceBeforeConditional: true,
+              spaceInParen: false,
+              unescapeStrings: false,
+              wrapLineLength: 0,
+              endWithNewline: true
+          }
+            }
+        },
         imagemin: { // Task   
             dynamic: { // Another target
                 files: [{
@@ -76,5 +115,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-jsbeautifier");
     grunt.loadNpmTasks('grunt-contrib-imagemin');
 
-    grunt.registerTask('default', ['less', 'autoprefixer', 'csso', 'uglify', 'watch']);
+    grunt.registerTask('default', ['less', 'jsbeautifier', 'autoprefixer', 'csso', 'uglify', 'watch']);
 };
