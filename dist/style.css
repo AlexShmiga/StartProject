@@ -1,6 +1,43 @@
 /*--- CSS Reset ---*/
+header,
+nav,
+section,
+article,
+aside,
+footer {
+  display: block;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
 .myblock {
   /* пример блока */
+  border: 1px solid #000;
   color: orange;
 }
 .myblock_size_s {
@@ -9,7 +46,7 @@
 }
 .myblock__title {
   /* пример элемента */
-  border: 10px solid red;
+  font-size: 20px;
 }
 .myblock__title_state_active {
   /* пример модификатора елемента */
