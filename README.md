@@ -18,17 +18,18 @@
 <p>О методологии БЭМ - <a href="https://ru.bem.info/method/definitions/">Что такое БЭМ?</a><b>*</b></p>
 <p>Из инструментов для БЭМ используется - less. Less заботится  о имени селекторов.
 Идея взята с <a href="http://noteskeeper.ru/1139/"><small>Генерация названий селекторов в стиле БЭМ с помощью препроцессоров</small></a></p>
-<p>Пример блока, елемента модификатора</p>
-<p><code>.myblock {/* пример блока */
-    color: orange;
-    &_size_s{/* пример модификатора блока */
-    	color: green;
-	}
-    &__title {/* пример элемента */
-    	border: 10px solid red;
-        &_state_active {/* пример модификатора елемента */
-            background: green;
-            color: white;
+<p>Пример блока, елемента, модификатора в less</p>
+<p><pre style="background:#000;color:#f8f8f8">.myblock {<span style="color:#aeaeae;font-style:italic">/* пример блока */</span>
+    <span style="color:#dad085">color</span><span style="color:#e28964">:</span> orange;
+    <span style="color:#e28964">&amp;</span>_size_s{<span style="color:#aeaeae;font-style:italic">/* пример модификатора блока */</span>
+        <span style="color:#dad085">color</span><span style="color:#e28964">:</span> green;
+    }
+    <span style="color:#e28964">&amp;</span>__title {<span style="color:#aeaeae;font-style:italic">/* пример элемента */</span>
+        border<span style="color:#e28964">:</span> 10px solid red;
+        <span style="color:#e28964">&amp;</span>_state_active {<span style="color:#aeaeae;font-style:italic">/* пример модификатора елемента */</span>
+            background<span style="color:#e28964">:</span> green;
+            <span style="color:#dad085">color</span><span style="color:#e28964">:</span> white;
         }
     }
-}</code></p>
+}
+</pre></p>
