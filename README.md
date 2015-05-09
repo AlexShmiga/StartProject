@@ -6,6 +6,7 @@
 <p>Выполнить в консоли: 
 <ol>
 	<li><code>npm install</code> (подтянуть плагины Grunt)</li> 
+	<li>Установка GruntCLI <code>npm install -g grunt-cli</code></li>
 	<li><code>bower install</code> (собрать необходимые библеотеки)</li>
 </ol>
 <p>При вызове команды <code>grunt</code> запустится:</p>
